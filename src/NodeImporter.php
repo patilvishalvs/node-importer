@@ -71,7 +71,7 @@ class NodeImporter {
       $properties[$info[1]] = $target_bundle;
       $entity = \Drupal::entityManager()->getStorage($target_type)->loadByProperties($properties);
       $entity = reset($entity);
-      if (empty($entity) && $target_type == 'taxonomy_term') {
+      if (empty($entity) && $target_type == 'taxonomy_term' && $target_bundle == 'tags') {
         $entity = Term::create([
               'name' => $value,
               'vid' => $target_bundle,
