@@ -1,0 +1,7 @@
+node_importer.upload:
+  path: '/node-importer/upload'
+  defaults:
+    _form: '\Drupal\node_importer\Form\NodeImporterForm'
+    _title: 'Bulk import node'
+  requirements:
+    _access: 'TRUE'

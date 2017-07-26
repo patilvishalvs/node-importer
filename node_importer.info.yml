@@ -1,0 +1,5 @@
+name: Node Importer
+description: Bulk import nodes using CSV file
+type: module
+package: Custom
+core: 8.x
